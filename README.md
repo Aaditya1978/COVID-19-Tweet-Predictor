@@ -21,6 +21,6 @@ The othe file is Procfile it tells the Heroku server that which file to run firs
 PLEASE NOTE :--- The Procfile name is case sensitive and also it should not have any extension . 
 It means that it should be without any extension.So be careful :)
 
-The Link To The website for my deployed Website is:--- 
+The Link To The website for my deployed Website is:--- https://covid-19-tweet-predictor.herokuapp.com/
 
 If you like . Please Star my Repo :)
