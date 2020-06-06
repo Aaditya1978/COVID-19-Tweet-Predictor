@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block head %}
+<style>
+  .button {
+    background-color: green;
+    color: rgb(245, 121, 121);
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font: 1.4em sans-serif;
+  }
+</style>
+{% endblock %} {% block content %}
+<form action="{{url_for('predict')}}" method="POST">
+  <br />
+  <h2 style="color: blue;"><u>Enter The Tweet You Have Recieved</u></h2>
+  <br />
+  <textarea name="message" rows="6" cols="50" required="required"></textarea>
+  <br />
+  <br />
+  <br />
+  <button class="button" type="submit" value="predict">Predict</button>
+</form>
+{% endblock %}

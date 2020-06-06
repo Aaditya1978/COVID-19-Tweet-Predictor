@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 style="color:orange"><u>The Prediction For the Entered Tweet Is</u></h1>
+    <br>
+    <br>
+        {% if prediction == 1 %}
+        <h2 style="color:green">It's Not Related to COVID-19</h2>
+        {% elif prediction == 0 %}
+        <h2 style="color:red">It's Related to COVID-19</h2>
+        {% endif %}    
+    <br>
+    <br>
+    <h3><a style="color:blue" href="{{url_for('home')}}">GO BACK</a></h3>
+{% endblock %}
